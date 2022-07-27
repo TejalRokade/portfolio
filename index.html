@@ -1,0 +1,412 @@
+<HTML>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+*{
+margin:0px;
+padding:0px;
+}
+
+nav{
+width:100%;
+
+}
+
+nav li a{
+width:120px;
+margin-left:10px;
+color:aqua !important;
+}
+
+#h1:hover{
+border-bottom:3px solid aqua;
+}
+
+span{
+color:aqua;
+padding-left:30px;
+}
+
+.main{
+	width:100%;
+	height:350px;
+	background:white;
+	text-align:center;
+	padding-top:120px
+}
+
+#C{
+display:inline-block;
+color:aqua;
+text-decoration:none;
+padding:10px 30px;
+border:3px solid aqua;
+border-radius:10px;
+}
+
+#c:hover{
+animation:pulsate 1.5s ease-in-out;
+}
+
+@keyframes pulsate{
+0%{
+box-shadow:0 0 25px aqua,
+0 0 50px aqua;
+}
+}
+
+button a:hover{
+color:aqua !important;
+font-size:17px;
+}
+
+button a{
+color:aqua !important;
+}
+
+.about{
+	width:100%;
+	height:20px;
+	padding-top:60px;
+	background:white;
+}
+
+.aboutdiv{
+	width:100%;
+	
+	background:white;
+	padding:60px;
+}
+
+#bb:before{
+	content:"";
+	position:absolute;
+	top:0;
+	width:0;
+	height:50px;
+	border-bottom:3px solid aqua !important;
+	
+	transition:all 0.4s linear;	
+}
+
+#bb{
+position:relative;
+text-align:center;
+}
+
+#bb:hover:before{
+	width:200PX;	
+}
+
+footer{
+	text-align:center;
+	background:black;
+	height:100px;
+	color:aqua;
+	line-height:100px;
+	border-top:4px solid aqua ;
+}
+
+.main a{text-decoration:none; color:black;}
+.download{align:center;text-center;}
+
+
+.project{
+	text-align:center;
+	padding-top:300px;
+	height:400px;
+}
+
+.projectsdiv{
+	text-align:center;
+	padding-top:100px;
+    height:0px;
+}
+
+.resumediv, .contactdiv,.aboutdiv{
+	text-align:center;
+	padding:100px;
+}
+
+.myself{
+	padding:20px;
+	border-left:3px solid blue;
+	margin:100px;
+}
+
+.edu{
+	padding:20px;
+	border-left:3px solid green;
+	margin:100px;
+
+}
+
+.work{
+	padding:20px;
+	border-left:3px solid grey;
+	margin:100px;
+}
+
+.Cources{
+	padding:20px;
+	border-left:3px solid #17a2b8;
+	margin:100px;
+}
+
+.certificate{
+	padding:20px;
+	border-left:3px solid red;
+	margin:100px;
+}
+
+span{color:aqua;
+	font-weight:bold;
+	
+}
+
+#a{
+	font-size:100px;
+	padding-top:100px;
+}
+
+#skills{
+    padding:60px;
+	margin:100px;
+	height:400px;
+	width:100%;
+    border-left:3px solid #ffc107;
+	background:white;
+	}
+	
+.skill{
+	width:100%;
+	height:autopx;
+	padding-top:50px;
+    background:white;
+	text-align:center;
+
+}
+
+.resume{
+	width:100%;
+	height:10px;
+	padding-top:150px;
+    background:white;
+	text-align:center;
+
+}
+
+#project{
+	width:100%;
+	height:auto;
+	padding-top:200px;
+    background:white;
+	text-align:center;
+
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+  <div class="container-fluid" >
+    <a class="navbar-brand" id="h1" href="#"><b><span>TEJAL ROKADE</span></b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="h1" >
+          <a class="nav-link"  href="#about">ABOUT ME</a>
+        </li>
+        <li class="nav-item" id="h1">
+          <a class="nav-link" href="#skill">SKILLS</a>
+        </li>
+        <li class="nav-item" id="h1">
+          <a class="nav-link" href="#project">PROJECT</a>
+        </li>
+       <li class="nav-item" id="h1">
+          <a class="nav-link" href="#resume">RESUME</a>
+        </li>
+		 <li class="nav-item" id="h1">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="main" id="main" >
+	<h4>HELLO, MY NAME IS TEJAL</h4>
+	<H1>A FRONT-END WEB DEVELOPER</H1><br>
+	<button type="button" class="" style="background:black" id="c"><a href="#resume" >Read CV</a></button>
+</div>
+<br><br>
+<br><br>
+
+
+<div class="about" id="about" >
+<h1 id="bb"><i><span>ABOUT ME</span></i></h1>
+</div>	<br>
+</div>
+<div class="aboutdiv">	
+	<h5>- Myself TEJAL ROKADE, B.Sc IT Graduate from Mumbai University. I am from Thane.</h5><br>
+	<h5>- Graduated in the year 2021 with CGPI of 8.38 out of 10.0 from Mumbai university, I have completed my SSC (10<sup>th</sup>) and HSC (12<sup>th</sup>) with 65% and 55% respectively from state Board of Maharashtra.</h5><br>
+	<h5>- I have completed Front End Web Development Course from CNC Webworld, navi Mumbai.</h5><br><br>
+<div class="download text-center">	
+<button type="button" class="" style="background:black" id="c"><a href="#" >Download CV</a></button>
+</div>
+</div>
+<br><br>
+ <br>
+ <br>
+ <br>
+<div class="skill" id="skill" >
+	
+	<h1 id="bb" ><i><span>SKILLS</span></i></h1>
+</div>
+
+<div class="skill">
+<div class="row" >
+	<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4" id="a">
+	<i class="fa fa-html5" aria-hidden="true" id="icom"></i>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4" id="a">
+	<i class="fa fa-css3" aria-hidden="true" id="icom"></i>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4" id="a">
+	<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16" >
+  <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+  <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+</svg>
+</div>
+</div>
+</div>		
+ 
+ 
+<div class="project" id="project" >
+	
+	<h1 id="bb" ><b><i><span>PROJECTS</span></i></b></h1>
+</div>
+
+<div class="projectsdiv">
+	<p><a href="https://tejalrokade.github.io/health/">- BOOTSTRAP WEBSITE PROJECT</a></p>
+	<p><a href="#">- MY PORTFOLIO WEBSITE PROJECT</a></p>
+</div>
+<br><br><br>
+<div class="resume" id="resume" >
+	
+	<h1 id="bb" ><b><i><span>RESUME</span></i></b></h1>
+</div>
+
+<div class="resumediv">
+	
+	<h5>Recently Graduated bachlors degree recipient in Information Technology Specialization.</h5>
+	<br>
+	<h5>"I am seeking opportunity to join a company that can help me in enhancing my skills, stengthning my knowledg amd realising my potential. I am willing to explorw a wide variety of opportunities that can help me gain perspective."</h5>
+	
+</div>
+
+<div class="myself ">
+	<h2 class="colllor text-primary font-italic"><b>Myself</b></h2><br>
+	<p><b>- TEJAL SHERKHANE</b></p><br>
+	<p>Passionate front-end developer with 3 month of experience using HTML, CSS, Javascript, HTML5, CSS3, JQuery to build all aspects of the user experience and user interface for client-facing landing pages.</p>
+</div>
+
+<div class="edu">
+	<h2 class="colllor text-success font-italic"><b>Education</b></h2><br>
+	
+	<p><b>- B.Sc IT (2018-2021)</b></p><br>
+	<p>CGPA : 8.38 out of 10.00</p>
+	<p>ICLES Motilal jhunjhunwala college of arts, commerce and science, Vashi, Navi Mumbai.</p><br><br>
+	
+	
+
+	<p><b>- HSC (2016-2018)</b></p>
+	<p>percentage: 55%</p>
+	<p>Dnyan Vikas jr. College of arts commerce and science, koparkhairane, Navi Mumbai</p><br><br>
+	
+	<p><b>- SSC (2015-2016)</b></p>
+	<p>percentage: 65%</p>
+	<p>Shetkar Shikshan Snsthas jr. College of arts and commerce, Ghansoli, Navi Mumbai</p>
+	
+</div>
+
+<div class="work">
+
+	<h2 class="colllor text-secondary font-italic"><b>Work experience In Web Development</b></h2><br>
+	
+	<p><b>* Fresher</b></p>
+	
+</div>
+
+<div class="Cources">
+
+	<h2 class="colllor text-info font-italic"><b>Cources</b></h2><br>
+	<p><b>Front End Web Development(2021)</b></p>
+	<p>Front End:HTML, CSS, JAVASCRIPT, HTML5, CSS3, JQUERY, BOOTSTRAP, REACT.</p>
+	<P>CNC WEBWORLD, Nerul, Navi Mumbai</P>
+	
+</div>
+
+<div class="certificate">
+
+	<h2 class="colllor text-danger font-italic"><b>Certificate</b></h2><br>
+	<p><b>Front End Web Developer</b></p>
+	<P>CNC WEBWORLD, Nerul, Navi Mumbai</P>
+	
+</div>
+
+
+<div class="certificate" id="skills">
+
+	<h2 class="colllor text-warning font-italic"><b> Skills</b></h2><br>
+	<ul>
+		<li>HTML</li>
+		<li>HTML5</li>
+		<li>CSS</li>
+		<li>CSS3</li>
+		<li>JAVASCRIPT</li>
+		<li>JQuery</li>
+		<li>BOOTSTRAP</li>
+		<li>REACT.JS</li>
+		<li>POWERPOINT</li>
+	</ul>
+	
+</div>
+
+<div class="contact" id="contact" >
+	
+	<h1 id="bb" ><b><i><span>CONTACT</span></i></b></h1>
+</div>
+<div class="contactdiv">
+	<p><i class="fa fa-whatsapp" style="color:green" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbspWhatsApp no.: 9967746192</p>
+	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbspEmail ID: tejalrokade29@gmail.com</p>
+	<i class="fa fa-phone" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp<a href="tel:9324046519">9967746192</a><br><br>	
+				<i class="fa fa-facebook-official" aria-hidden="true" style="font-size:30px; color:blue"></i>&nbsp&nbsp&nbsp
+			<i class="fa fa-instagram" aria-hidden="true" style="font-size:30px; color:#F90CA7"></i>&nbsp&nbsp&nbsp
+			<i class="fa fa-twitter" aria-hidden="true" style="font-size:30px; color:skyblue"></i>&nbsp&nbsp&nbsp
+			<i class="fa fa-linkedin" aria-hidden="true" style="font-size:30px; color:blue"></i>
+</div>
+
+
+
+
+<footer>
+	<p>&copy 2022 All rights reserve, created by Tejal Rokade<sup>TM</sup></p>
+</footer>
+
+
+
+</body>
+</HTML>
